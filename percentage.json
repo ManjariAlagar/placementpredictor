@@ -1,0 +1,36 @@
+{
+  "placementpredictor": {
+    "percentagecalculator": [
+      {
+        "python": "Python",
+        "python_score": "90.00",
+        "datasc": "Data science",
+        "datascience_score": "40.00",
+        "ds": "Data structures",
+        "ds_score": "50.00",
+        "resulttitle": "Result",
+        "result": "60%"
+      },
+      {
+        "python": "Python",
+        "python_score": "100.00",
+        "datasc": "Data science",
+        "datascience_score": "90.00",
+        "ds": "Data structures",
+        "ds_score": "90.00",
+        "resulttitle": "Result",
+        "result": "93.33%"
+      },
+      {
+        "python": "Python",
+        "python_score": "10.00",
+        "datasc": "Data science",
+        "datascience_score": "100.00",
+        "ds": "Data structures",
+        "ds_score": "80.00",
+        "resulttitle": "Result",
+        "result": "63.3%"
+      }
+    ]
+  }
+}
