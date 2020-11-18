@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <nav class="navbar navbar-inverse">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <a class="navbar-brand" href="#">Placement Predictor</a>
+    </div>
+    <ul class="nav navbar-nav">
+      <li><a href="#">Home</a></li>
+      <li class="active"><a href="#">Applicants</a></li>
+      <li><a href="#">Companies</a></li>
+      
+    </ul>
+  </div>
+</nav>
+<style>
+body {background-color: powderblue;}
+h2   {color: blue;}
+h3   {color: green;}
+p    {color: red;}
+</style>
+<body>
+<img src="place.jpg" style="width:1250px;height:200px;">
+<h2>List of Applicants applied</h2>
+<p id="demo"></p>
+
+<script>
+var myObj, i, j, x = "";
+myObj = {
+  "placement": [
+    {"name":"Manjari", "details":["27-11-2000", "19", "BTech","IT","8.88"]},
+    {"name":"Subiksha", "details":["10-10-2000", "20", "Btech","IT","10"]},
+    {"name":"Ram", "details":["07-07-2001", "19","BE","ECE","7.8"] }
+  ]
+}
+for (i in myObj.placement) {
+  x += "<h3>" + myObj.placement[i].name + "</h3>";
+  for (j in myObj.placement[i].details) {
+    x += myObj.placement[i].details[j] + "<br>";
+  }
+}
+document.getElementById("demo").innerHTML = x;
+</script>
+
+</body>
+</html>
