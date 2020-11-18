@@ -1,0 +1,43 @@
+<?xml encoding="UTF-8"?>
+
+<!ELEMENT placementpredictor (percentagecalculator)+>
+<!ATTLIST placementpredictor
+  xmlns CDATA #FIXED ''>
+
+<!ELEMENT percentagecalculator (python,python_score,datasc,
+                                datascience_score,ds,ds_score,
+                                resulttitle,result)>
+<!ATTLIST percentagecalculator
+  xmlns CDATA #FIXED ''>
+
+<!ELEMENT python (#PCDATA)>
+<!ATTLIST python
+  xmlns CDATA #FIXED ''>
+
+<!ELEMENT python_score (#PCDATA)>
+<!ATTLIST python_score
+  xmlns CDATA #FIXED ''>
+
+<!ELEMENT datasc (#PCDATA)>
+<!ATTLIST datasc
+  xmlns CDATA #FIXED ''>
+
+<!ELEMENT datascience_score (#PCDATA)>
+<!ATTLIST datascience_score
+  xmlns CDATA #FIXED ''>
+
+<!ELEMENT ds (#PCDATA)>
+<!ATTLIST ds
+  xmlns CDATA #FIXED ''>
+
+<!ELEMENT ds_score (#PCDATA)>
+<!ATTLIST ds_score
+  xmlns CDATA #FIXED ''>
+
+<!ELEMENT resulttitle (#PCDATA)>
+<!ATTLIST resulttitle
+  xmlns CDATA #FIXED ''>
+
+<!ELEMENT result (#PCDATA)>
+<!ATTLIST result
+  xmlns CDATA #FIXED ''>

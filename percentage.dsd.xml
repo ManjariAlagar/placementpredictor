@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified">
+  <xs:element name="placementpredictor">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element maxOccurs="unbounded" ref="percentagecalculator"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="percentagecalculator">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="python"/>
+        <xs:element ref="python_score"/>
+        <xs:element ref="datasc"/>
+        <xs:element ref="datascience_score"/>
+        <xs:element ref="ds"/>
+        <xs:element ref="ds_score"/>
+        <xs:element ref="resulttitle"/>
+        <xs:element ref="result"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="python" type="xs:NCName"/>
+  <xs:element name="python_score" type="xs:decimal"/>
+  <xs:element name="datasc" type="xs:string"/>
+  <xs:element name="datascience_score" type="xs:decimal"/>
+  <xs:element name="ds" type="xs:string"/>
+  <xs:element name="ds_score" type="xs:decimal"/>
+  <xs:element name="resulttitle" type="xs:NCName"/>
+  <xs:element name="result" type="xs:string"/>
+</xs:schema>

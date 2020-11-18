@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="percentage.xsl"?>
+<placementpredictor>
+   <percentagecalculator>
+	  <python>Python</python>
+      <python_score>90.00</python_score>
+	  <datasc>Data Science</datasc>
+      <datascience_score>40.00</datascience_score>
+	  <ds>Data Structures</ds>
+      <ds_score>50.00</ds_score>
+	  <resulttitle>Result</resulttitle>
+      <result>60%</result>
+   </percentagecalculator>
+   <percentagecalculator>
+	  <python>Python</python>
+      <python_score>100.00</python_score>
+	  <datasc>Data Science</datasc>
+      <datascience_score>90.00</datascience_score>
+	  <ds>Data Structures</ds>
+      <ds_score>90.00</ds_score>
+	  <resulttitle>Result</resulttitle>
+      <result>93.33%</result>
+   </percentagecalculator>
+   <percentagecalculator>
+      <python>Python</python>
+      <python_score>10.00</python_score>
+	  <datasc>Data Science</datasc>
+      <datascience_score>100.00</datascience_score>
+	  <ds>Data Structures</ds>
+      <ds_score>80.00</ds_score>
+	  <resulttitle>Result</resulttitle>
+      <result>63.3%</result>
+   </percentagecalculator>
+</placementpredictor>
