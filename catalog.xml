@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="catalog.xsl"?>
+<placementform>
+  <Student_personal>
+<fname>Manjari</fname>
+<lname>A</lname>
+<dob>2000-11-27</dob>
+<age>19</age>
+<gender>Female</gender>
+<school>Jain vidhyalaya</school>
+<college>Thiagarajar college of engineering</college>
+<degree>Btect</degree>
+<course>IT</course>
+<cgpa>8.88</cgpa>
+</Student_personal>
+<Student_personal>
+<fname>Subiksha</fname>
+<lname>GB</lname>
+<dob>2000-10-10</dob>
+<age>20</age>
+<gender>Female</gender>
+<school>Kendri Vidhyalaya</school>
+<college>Thiagarajar college of engineering</college>
+<degree>Btect</degree>
+<course>IT</course>
+<cgpa>10</cgpa>
+</Student_personal>
+<Student_personal>
+<fname>Ram</fname>
+<lname>S</lname>
+<dob>2001-03-27</dob>
+<age>19</age>
+<gender>Male</gender>
+<school>CEOA</school>
+<college>Velamal college of engineering</college>
+<degree>BE</degree>
+<course>ECE</course>
+<cgpa>8.00</cgpa>
+</Student_personal>
+</placementform>

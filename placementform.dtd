@@ -1,0 +1,12 @@
+<!ELEMENT placementform (Student_personal)>
+<!ELEMENT Student_personal(fname,lname,dob,age,gender,school,college,degree,course,cgpa)>
+<!ELEMENT fname(#PCDATA)>
+<!ELEMENT lname(#PCDATA)>
+<!ELEMENT dob(#PCDATA)>
+<!ELEMENT age(#PCDATA)>
+<!ELEMENT gender(#PCDATA)>
+<!ELEMENT school(#PCDATA)>
+<!ELEMENT college(#PCDATA)>
+<!ELEMENT degree(#PCDATA)>
+<!ELEMENT course(#PCDATA)>
+<!ELEMENT cgpa(#PCDATA)>
