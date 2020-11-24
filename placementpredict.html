@@ -228,7 +228,7 @@ tr:nth-child(even) {
     <div class="testbox">
       <form>
         <div class="banner">
-		<img src="place.jpg" width="100%" height="100%">
+		<img src="placement_hoax.jfif" width="200%" height="100%">
           
         </div>
         <br/>
@@ -288,23 +288,25 @@ tr:nth-child(even) {
   </table></li></ol>
                     </div>
           </div>
-  <div ng-app="placementApp" ng-controller="thisapp"> 
-        <p> 
+	<div class="card" >
+	<h2>Skills percentage calculator .. Know your skill level and work hard!! </h2>
+      <form>
+        <p> <br/>
+		<div ng-app="placementApp" ng-controller="thisapp">
             Enter your score for python
             <input type="number" ng-model="num1" /> 
             <br/> Enter your score for Data science
             <input type="number" ng-model="num2" /> 
-            <br/> Enter yourscore for Data structure
+            <br/> Enter your score for Data structure
             <input type="number" ng-model="num3"/>
             <br/>
-        </p> 
-        <button ng-click="result2()">Calculate</button> 
+			<button ng-click="result2()">Calculate</button> 
         <score-directive></score-directive>
-        <p>Results: {{results}} 
-    </div> 
-    
- 
-                             
+		Results: {{results}}
+        </p> <br/>
+        
+</div></div>
+                         
                      
                            
               
