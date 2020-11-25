@@ -1,0 +1,83 @@
+<html>
+<head>
+<meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <nav class="navbar navbar-inverse">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <a class="navbar-brand" href="#">Placement Predictor</a>
+    </div>
+    <ul class="nav navbar-nav">
+      <li><a href="#">Home</a></li>
+      <li class="active"><a href="#">Calculate skills</a></li>
+      <li><a href="#">Companies</a></li>
+      
+    </ul>
+  </div>
+</nav>
+<style>
+table, th, td {
+    border: 5px solid black;
+    border-collapse:collapse;
+}
+th, td {
+    padding: 20px;
+}
+</style></head>
+<body style=" background-color:#00bfff;">
+<span><p style="color:white;font-weight:20px;font-size:40px;font-style:bold;text-align:center;font-family:verdana;"> Yours skills percentage are here!<br/><p>
+<p style="color:white;font-weight:20px;font-size:30px;text-align:left">Name: Mishri<br/>DOB:10/10/2000<br/></p></span><br/>
+<table id="demo1">
+<tr>
+<th>Skill</th>
+<th>Score</th>
+</tr>
+<tr>
+<td id = "Python"></td>
+<td id="pscore"></td>
+</tr>
+<tr>
+<td id = "DST"></td>
+<td id="dscore"></td>
+</tr>
+<tr>
+<td id = "DS"></td>
+<td id="dsscore"></td>
+</tr>
+<tr>
+<td id = "Resulthead"></td>
+<td id="resultsdis"></td>
+</tr>
+</table><br/>
+<p style="color:white;font-weight:20px;font-size:40px;font-style:bold;text-align:center;font-family:comic sans;">Congrats you are qualified to take the test!</p>
+<script>
+var text, parser, xmlDoc;
+
+text = "<placementpredictor><percentagecalculator>"+
+	 "<python>Python</python>"+
+      "<python_score>90.00</python_score>"+
+	  "<datasc>Data Science</datasc>"+
+      "<datascience_score>40.00</datascience_score>"+
+	  "<ds>Data Structures</ds>"+
+      "<ds_score>50.00</ds_score>"+
+	  "<resulttitle>Result</resulttitle>"+
+      "<result>60%</result>"+
+   "</percentagecalculator></placementpredictor>"
+parser = new DOMParser();
+xmlDoc = parser.parseFromString(text,"text/xml");
+
+document.getElementById("Python").innerHTML =xmlDoc.getElementsByTagName("python")[0].childNodes[0].nodeValue;
+document.getElementById("pscore").innerHTML =xmlDoc.getElementsByTagName("python_score")[0].childNodes[0].nodeValue;
+document.getElementById("DST").innerHTML =xmlDoc.getElementsByTagName("datasc")[0].childNodes[0].nodeValue;
+document.getElementById("dscore").innerHTML =xmlDoc.getElementsByTagName("datascience_score")[0].childNodes[0].nodeValue;
+document.getElementById("DS").innerHTML =xmlDoc.getElementsByTagName("ds")[0].childNodes[0].nodeValue;
+document.getElementById("dsscore").innerHTML =xmlDoc.getElementsByTagName("ds_score")[0].childNodes[0].nodeValue;
+document.getElementById("Resulthead").innerHTML =xmlDoc.getElementsByTagName("resulttitle")[0].childNodes[0].nodeValue;
+document.getElementById("resultsdis").innerHTML =xmlDoc.getElementsByTagName("result")[0].childNodes[0].nodeValue;
+</script>
+
+</body>
+</html>

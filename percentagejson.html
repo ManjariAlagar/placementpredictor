@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <nav class="navbar navbar-inverse">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <a class="navbar-brand" href="#">Placement Predictor</a>
+    </div>
+    <ul class="nav navbar-nav">
+      <li><a href="#">Home</a></li>
+      <li class="active"><a href="#">Calculate skills</a></li>
+      <li><a href="#">Companies</a></li>
+      
+    </ul>
+  </div>
+</nav>
+</head>
+<style>
+body {background-color: powderblue;}
+h2   {color: blue;}
+h3   {color: green;}
+p    {color: red;}
+</style>
+<body>
+<img src="place.jpg"  style="width:1300px;height:250px;">
+<h2>Skills percentage calculator</h2>
+
+<p id="demo"></p>
+
+<script>
+var myObj, i, j, x = "";
+myObj = {
+  "percentages": [
+    {
+        "python": "Python",
+        "python_score": "90.00",
+        "datasc": "Data science",
+        "datascience_score": "40.00",
+        "ds": "Data structures",
+        "ds_score": "50.00",
+        "resulttitle": "Result",
+        "result": "60%"
+      },
+      {
+        "python": "Python",
+        "python_score": "100.00",
+        "datasc": "Data science",
+        "datascience_score": "90.00",
+        "ds": "Data structures",
+        "ds_score": "90.00",
+        "resulttitle": "Result",
+        "result": "93.33%"
+      },
+      {
+        "python": "Python",
+        "python_score": "10.00",
+        "datasc": "Data science",
+        "datascience_score": "100.00",
+        "ds": "Data structures",
+        "ds_score": "80.00",
+        "resulttitle": "Result",
+        "result": "63.3%"
+      }
+  ]
+}
+for (i in myObj.percentages) {
+  x += "<h3>" + myObj.percentages[i].python+ "</h3>";
+  x += "<p>" + myObj.percentages[i].python_score+ "</p>";
+   x += "<h3>" + myObj.percentages[i].datasc+ "</h3>";
+    x += "<p>" + myObj.percentages[i].datascience_score+ "<p>";
+	 x += "<h3>" + myObj.percentages[i].ds+ "</h3>";
+	  x += "<p>" + myObj.percentages[i].ds_score+ "</p>";
+	   x += "<h3>" + myObj.percentages[i].resulttitle+ "</h3>";
+	    x += "<p>" + myObj.percentages[i].result+ "</p>";
+}
+document.getElementById("demo").innerHTML = x;
+</script>
+
+</body>
+</html>
